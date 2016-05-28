@@ -1,6 +1,15 @@
 .page-tape {
   display: block;
   margin: 0 auto;
+  color: #e6e5e5;
+}
+.page-tape a,
+.page-tape .link {
+  color: #d7a490;
+}
+.page-tape a:hover,
+.page-tape .link:hover {
+  color: #a0a6aa;
 }
 @media screen {
   .page-tape {

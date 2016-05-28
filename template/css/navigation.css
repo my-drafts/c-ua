@@ -13,6 +13,7 @@ nav.menu ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  overflow: hidden;
   position: relative;
 }
 nav.menu li {
@@ -25,6 +26,7 @@ nav.menu > ul > li ul {
   display: none;
   flex-direction: column;
   margin-left: 28px;
+  margin-bottom: 8px;
   width: auto;
 }
 nav.menu li > a:first-child,
@@ -45,16 +47,17 @@ nav.menu li .dropdown.show {
 }
 nav.menu,
 nav.menu * {
-  color: #ffffff;
+  color: #d7a490;
   font: normal 10pt/14pt Tahoma, Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
 }
 nav.menu > ul {
-  background-color: #333;
+  background-color: #00052c;
   border-radius: 0 0 16px 16px;
 }
 nav.menu li:hover,
 nav.menu li:hover > a,
 nav.menu li:hover > span {
-  color: deepskyblue;
+  background-color: #00153c;
+  color: #a0a6aa;
 }

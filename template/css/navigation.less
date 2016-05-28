@@ -15,6 +15,7 @@ nav.menu {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
+		overflow: hidden;
 		position: relative;
 	}
 	li {
@@ -27,6 +28,7 @@ nav.menu {
 		display: none;
 		flex-direction: column;
 		margin-left: 28px;
+		margin-bottom: 8px;
 		width: auto;
 	}
 	li > a:first-child, li > span:first-child {
@@ -49,15 +51,16 @@ nav.menu {
 // menu: styles
 nav.menu {
 	&, *{
-		color: #ffffff;
+		color: #d7a490;
 		font: normal 10pt/14pt Tahoma, Helvetica Neue, Helvetica, Arial, sans-serif;
 		letter-spacing: 1px;
 	}
 	& > ul{
-		background-color: #333;
+		background-color: #00052c;
 		border-radius: 0 0 16px 16px;
 	}
 	li:hover, li:hover > a, li:hover > span {
-		color: deepskyblue;
+		background-color: #00153c;
+		color: #a0a6aa;
 	}
 }

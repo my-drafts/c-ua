@@ -5,3 +5,141 @@
 a {
   text-decoration: none;
 }
+nav.menu a {
+  outline: none;
+  text-decoration: none;
+}
+nav.menu li,
+nav.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.menu ul {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+nav.menu li {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+nav.menu > ul > li ul {
+  border-left: 1px dotted #999;
+  display: none;
+  flex-direction: column;
+  margin-left: 28px;
+  margin-bottom: 8px;
+  width: auto;
+}
+nav.menu li > a:first-child,
+nav.menu li > span:first-child {
+  display: inline-flex;
+  padding: 16px 24px;
+}
+nav.menu li .dropdown {
+  background: url("/template/img/menu-selected-down.gif") no-repeat center;
+  color: transparent !important;
+  margin-left: 8px;
+  margin-right: -8px;
+  display: inline-block;
+  width: 16px;
+}
+nav.menu li .dropdown.show {
+  background-image: url("/template/img/menu-selected-right.gif");
+}
+nav.menu,
+nav.menu * {
+  color: #d7a490;
+  font: normal 10pt/14pt Tahoma, Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+nav.menu > ul {
+  background-color: #00052c;
+  border-radius: 0 0 16px 16px;
+}
+nav.menu li:hover,
+nav.menu li:hover > a,
+nav.menu li:hover > span {
+  background-color: #00153c;
+  color: #a0a6aa;
+}
+.page-tape {
+  display: block;
+  margin: 0 auto;
+  color: #e6e5e5;
+}
+.page-tape a,
+.page-tape .link {
+  color: #d7a490;
+}
+.page-tape a:hover,
+.page-tape .link:hover {
+  color: #a0a6aa;
+}
+@media screen {
+  .page-tape {
+    max-width: 4096px;
+  }
+}
+@media (min-width: 300px) {
+  .page-tape {
+    max-width: 300px;
+  }
+}
+@media (min-width: 320px) {
+  .page-tape {
+    max-width: 320px;
+  }
+}
+@media (min-width: 400px) {
+  .page-tape {
+    max-width: 400px;
+  }
+}
+@media (min-width: 480px) {
+  .page-tape {
+    max-width: 480px;
+  }
+}
+@media (min-width: 600px) {
+  .page-tape {
+    max-width: 600px;
+  }
+}
+@media (min-width: 640px) {
+  .page-tape {
+    max-width: 640px;
+  }
+}
+@media (min-width: 800px) {
+  .page-tape {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-tape {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 2048px) {
+  .page-tape {
+    max-width: 2048px;
+  }
+}
+.page-tape > header {
+  margin-bottom: 24px;
+}
+.page-tape > main {
+  margin-bottom: 24px;
+}
+.page-tape .top-tv {
+  background-color: #333;
+}
+.page-tape .top-tv .swiper-container {
+  min-height: 300px;
+}
